@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=320, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+  <script>
+    var viewport = document.getElementById('viewport');
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+      viewport.setAttribute("content", "width=device-width, initial-scale=0.8, user-scalable=no");
+    } else if (navigator.userAgent.match(/iPad/i)) {
+      viewport.setAttribute("content", "initial-scale=1.2, user-scalable=no");
+    }
+  </script>
 
   <title>Manuel Mertl</title>
 
