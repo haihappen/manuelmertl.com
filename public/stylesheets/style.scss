@@ -28,6 +28,7 @@ body {
   width: 100%;
   height: 100%;
 
+  background-color: #f0f0f0;
   font-family: "bariol_regularregular", sans-serif;
   font-weight: normal;
 }
@@ -37,6 +38,7 @@ h1 {
 
   font-size: 2.45em;
   text-align: center;
+  white-space: nowrap;
 }
 
 h2 {
@@ -51,7 +53,7 @@ div {
   $negative-margin: $width * -0.5;
 
   margin-left: $negative-margin;
-  margin-top: $negative-margin;
+  margin-top: $negative-margin - 75px;
   width: $width;
 
   position: absolute;
@@ -77,7 +79,7 @@ li {
   float: left;
 }
 
-a {
+a, span {
   @include block;
 
   background-size: 100%;
