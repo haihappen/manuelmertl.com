@@ -1,0 +1,47 @@
+@import "//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css";
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+ul {
+  margin-left: -74px;
+  margin-top: -74px;
+  padding: 0;
+  width: 148px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  clear: both;
+  list-style: none;
+  *zoom: 1; }
+  ul:before, ul:after {
+    content: " ";
+    display: table; }
+  ul:after {
+    clear: both; }
+
+li {
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+  margin: 5px;
+  float: left; }
+  li:nth-child(3) {
+    clear: left; }
+
+a {
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+  background-size: 100%; }
+  a.facebook {
+    background-image: url("../images/shadow/facebook.png"); }
+  a.twitter {
+    background-image: url("../images/shadow/twitter.png"); }
+  a.linkedin {
+    background-image: url("../images/shadow/linkedin.png"); }
+  a.xing {
+    background-image: url("../images/shadow/xing.png"); }
