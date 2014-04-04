@@ -1,4 +1,6 @@
 @import "//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css";
+@import "bariol.css";
+
 
 $size: 64px;
 $margin: 5px;
@@ -6,6 +8,8 @@ $margin: 5px;
 * {
   box-sizing: border-box;
 }
+
+
 
 @mixin clearfix {
   *zoom:1;
@@ -23,20 +27,40 @@ $margin: 5px;
 body {
   width: 100%;
   height: 100%;
+
+  font-family: "bariol_regularregular", sans-serif;
+  font-weight: normal;
 }
 
-ul {
-  $width: $size * 2 + $margin * 4;
+h1 {
+  margin: 0;
+
+  font-size: 2.45em;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+
+  font-size: 1em;
+  text-align: center;
+}
+
+div {
+  $width: $size * 3 + $margin * 6;
   $negative-margin: $width * -0.5;
 
   margin-left: $negative-margin;
   margin-top: $negative-margin;
-  padding: 0;
   width: $width;
 
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+ul {
+  padding: 0;
 
   clear: both;
 
@@ -51,10 +75,6 @@ li {
   margin: $margin;
 
   float: left;
-
-  &:nth-child(3) {
-    clear: left;
-  }
 }
 
 a {
@@ -62,9 +82,9 @@ a {
 
   background-size: 100%;
 
-  @each $network in facebook, twitter, linkedin, xing {
+  @each $network in facebook, twitter, googleplus, email, avatar, github, linkedin, xing, tumblr {
     &.#{$network} {
-      background-image: url("../images/shadow/#{$network}.png");
+      background-image: url("../images/flat/#{$network}.png");
     }
   }
 }
